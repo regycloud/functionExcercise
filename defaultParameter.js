@@ -56,3 +56,22 @@ const plantNeedsWater = (day) => {
     Function body composed of a single-line block does not need curly braces.
     example: const squareNum = num => num * num;
 */
+
+
+// Using destructuring object on function
+
+const user = {
+    id: 24,
+    displayName: 'kren',
+    fullName: 'Kylo Ren',
+};
+
+function introduce({displayName, fullName}) {
+    console.log(`${displayName} is ${fullName}`);
+}
+
+introduce(user);
+
+/* output
+kren is Kylo Ren
+*/
